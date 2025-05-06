@@ -1,8 +1,9 @@
-This project demonstrates a simple WebSocket-based chat server and client using Python's `asyncio` and `websockets` libraries. The server supports multiple clients, and the client sends timestamp messages every second.
+This project demonstrates a simple WebSocket websocket server and client. 
+The client script sends timestamp messages every second, and the server broadcasts these messages to all other connected clients (eg Resonite).
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 
@@ -18,13 +19,13 @@ resonite-boilerplate-scripts/
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - Python 3.10 or newer
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. **Clone or download this repository**.
 
@@ -38,7 +39,7 @@ This only needs to be done once.
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Before running the server or client, you must create a config file.
 
@@ -68,7 +69,7 @@ port = 8765
 
 ---
 
-## 🚀 Running the Server script
+## Running the Server script
 
 ```bash
 python ws_server.py
@@ -76,7 +77,7 @@ python ws_server.py
 
 ---
 
-## 📡 Running the Client script
+## Running the Client script
 
 ```bash
 python ws_client.py
@@ -84,7 +85,7 @@ python ws_client.py
 
 ---
 
-## 🔄 How It Works
+## How It Works
 
 * **Server:** Accepts connections from any number of clients and broadcasts received messages to all other clients.
 * **Client:** Sends the current Unix timestamp every 1 second to the server.
@@ -104,3 +105,5 @@ This means if you run the server and client scripts, you can connect to the webs
 4. Modify the `Uri input` field with your websocket server IP and port, eg `ws://10.0.0.106:8765`
 5. Click the "Call" trigger on the `Websocket Connect` protoflux node
 6. If the server and client are running, you should see the `LatestReceivedWebsocketMessage` variable update with the timestamp sent by the client script every second.
+
+![Protoflux WebSocket Setup](screenshots/Protoflux.png)
