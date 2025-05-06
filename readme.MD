@@ -1,7 +1,5 @@
-This project demonstrates a simple WebSocket websocket server and client. 
+This project demonstrates a simple websocket server and client. 
 The client script sends timestamp messages every second, and the server broadcasts these messages to all other connected clients (eg Resonite).
-
----
 
 ## Project Structure
 
@@ -17,13 +15,9 @@ resonite-boilerplate-scripts/
 
 ````
 
----
-
 ## Prerequisites
 
 - Python 3.10 or newer
-
----
 
 ## Installation
 
@@ -34,10 +28,6 @@ resonite-boilerplate-scripts/
    ```bash
    pip install -r requirements.txt
    ```
-
-This only needs to be done once.
-
----
 
 ## Configuration
 
@@ -67,7 +57,7 @@ port = 8765
 ```
 
 
----
+
 
 ## Running the Server script
 
@@ -75,15 +65,11 @@ port = 8765
 python ws_server.py
 ```
 
----
-
 ## Running the Client script
 
 ```bash
 python ws_client.py
 ```
-
----
 
 ## How It Works
 
@@ -93,8 +79,6 @@ python ws_client.py
 
 
 This means if you run the server and client scripts, you can connect to the websocket server on Resonite and see the messages sent by the client.
-
----
 
 ## Connecting to websocket server via Resonite
 
